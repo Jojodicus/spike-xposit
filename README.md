@@ -1,6 +1,8 @@
 Spike RISC-V ISA Simulator
 ============================
 
+Forked version implementing the Xposit extension - https://github.com/artecs-group/llvm-xposit
+
 About
 -------------
 
