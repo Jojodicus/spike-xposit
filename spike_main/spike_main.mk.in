@@ -4,6 +4,7 @@ spike_main_subproject_deps = \
 	softfloat \
 	disasm \
 	riscv \
+	customext \
 
 spike_main_install_prog_srcs = \
 	spike.cc \
@@ -17,4 +18,4 @@ spike_main_CFLAGS = -fPIC
 
 # This hack adds all symbols from extension.o to spike's dynamic symbol
 # table, which is required for dynamically loaded --extension libraries
-spike_main_LDFLAGS = extension.o
+spike_main_LDFLAGS = extension.o xposit.o

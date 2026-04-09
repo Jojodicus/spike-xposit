@@ -1,5 +1,4 @@
 customext_subproject_deps = \
-	spike_main \
 	riscv \
 	disasm \
 	softfloat \
@@ -7,5 +6,8 @@ customext_subproject_deps = \
 customext_srcs = \
 	dummy_rocc.cc \
 	cflush.cc \
+	xposit.cc \
+
+customext_CFLAGS = -I$(src_dir)/universal/include/sw
 
 customext_install_shared_lib = yes

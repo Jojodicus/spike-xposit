@@ -552,6 +552,7 @@ int main(int argc, char** argv)
   if (dc && l2) dc->set_miss_handler(&*l2);
   if (ic) ic->set_log(log_cache);
   if (dc) dc->set_log(log_cache);
+  extensions.push_back(find_extension("xposit"));
   for (size_t i = 0; i < cfg.nprocs(); i++)
   {
     if (ic) s.get_core(i)->get_mmu()->register_memtracer(&*ic);
