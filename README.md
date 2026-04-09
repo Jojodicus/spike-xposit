@@ -3,6 +3,11 @@ Spike RISC-V ISA Simulator
 
 Forked version implementing the Xposit extension - https://github.com/artecs-group/llvm-xposit
 
+The extension is added to the default config, so you don't have to specify `--extension` when running with posits.
+
+Note that test results may differ for DIV and SQRT, the PERCIVAL accelerator (optionally) uses approximate arithmetic for these.
+This simulator uses the default implementation of https://github.com/stillwater-sc/universal for operations.
+
 About
 -------------
 
